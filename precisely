@@ -1,1 +1,42 @@
 .github/workflows/store_loop.yml
+name: Run Automated Store Loop
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Automatically runs once every single day at midnight
+  workflow_dispatch:      # Allows you to click a button and run it manually whenever you want
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write     # Gives your agent team permission to save changes back to GitHub
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run AI Agent Store Update
+      env:  zzwq-dogt-tcdj-deda-qjmc
+        # FILLING THE BLANKS: Injecting both necessary security keys safely into the environment
+        OPEN_ROUTER_FREE_KEY: ${{ secrets.OPEN_ROUTER_FREE_KEY }}
+        STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+      run: python agents/store_crew.py
+
+    - name: Save Storefront Changes
+      run: |
+        git config --global user.name "AI-Store-Manager"
+        git config --global user.email "store-manager@agents.ai"
+        git add website/index.html
+        git commit -m "🤖 Auto-Update: Agent team optimized products and updated storefront theme" || echo "No changes to commit"
+        git push
