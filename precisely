@@ -28,6 +28,7 @@ jobs:
 
     - name: Run AI Agent Store Update
       env:  zzwq-dogt-tcdj-deda-qjmc
+      env:  sk-or-v1-4d1...21d
         # FILLING THE BLANKS: Injecting both necessary security keys safely into the environment
         OPEN_ROUTER_FREE_KEY: ${{ secrets.OPEN_ROUTER_FREE_KEY }}
         STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
