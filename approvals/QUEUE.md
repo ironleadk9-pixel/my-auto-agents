@@ -1,10 +1,10 @@
 # Queue
 
-Low-involvement dropship. No warehouse. No sample gate for the first live test.
-Joseph still marks APPROVED before a YNS publish.
+Public shop: https://iron-lead-k9.yns.store
+Vercel code deploy: https://my-auto-agents.vercel.app (not the customer URL)
 
 | id | item | asked | status | joseph |
 |---|---|---|---|---|
-| HARNESS-001 | first tactical harness | high-review dropship source + $39 list | WAIT | |
-| STORE-001 | live storefront | YNS account + Stripe + Vercel | WAIT | |
-| TRAFFIC-001 | put harness in front of buyers | IG account + first 5 hooks | WAIT | |
+| STORE-001 | live storefront | people can browse | LIVE | use yns.store URL |
+| HARNESS-001 | first tactical harness | high-review dropship + price | WAIT | $159 listing is unproven |
+| TRAFFIC-001 | put harness in front of buyers | IG account + first 5 hooks | WAIT | copy in briefs/ig-hooks.md |
