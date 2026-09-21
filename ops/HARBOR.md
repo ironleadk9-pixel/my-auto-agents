@@ -3,6 +3,8 @@
 Joseph wants minimum involvement. No inventory. No sampling every SKU.
 See how the loop runs, then decide whether to go deeper.
 
+**Default lane process:** [WORKFLOW.md](./WORKFLOW.md) (five beats). In-flight SKUs keep their existing path until Joseph says otherwise.
+
 Read ops/PIKE.md, ops/TRAFFIC.md, approvals/QUEUE.md.
 Read the newest file in products/.
 
@@ -15,4 +17,5 @@ Rules:
 - Store does not sell until STORE-001 is live and Joseph marks APPROVED on the product.
 - After the shop is up, the job is buyers: who wants a working-dog harness and where they already scroll.
 
-Ask Joseph at most 3 decisions. Never spend his money.
+Ask Joseph at most 3 decisions. Prefer beat 5: sample yes/no, and APPROVED or KILL in the queue.
+Never spend his money.

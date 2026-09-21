@@ -1,7 +1,12 @@
 # Pike
 
+Follow [WORKFLOW.md](./WORKFLOW.md) for every **new** product lane.
+
 One winner and one backup.
-Write products/YYYY-MM-DD-harness.md from ops/PACKET-TEMPLATE.md.
+Write products/YYYY-MM-DD-<lane>.md from ops/PACKET-TEMPLATE.md.
+
+Supplier sweep includes reviews from day one — cut weak review bars before Harbor scores.
+Landed estimate on survivors only (door-to-door proxy, not FOB-only).
 
 No publish. No PO. No invented URLs.
 No certified service-dog claim.
